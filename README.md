@@ -1,18 +1,11 @@
-# Build your first Chrome Extension — Freshtab
+# Build your first Chrome Extension (Tutorial starter files)
 
 Freshtab displays a beautiful image from Unsplash every time you open a new tab.
+Tutorial: https://freshman.tech/first-chrome-extension
 
 Here's what the completed project looks like:
 
-![demo](https://github.com/Freshman-tech/freshtab/blob/master/demo.jpg)
-
-Tutorial: https://freshman.tech/first-chrome-extension
-
-## Features
-
-- Enjoy a new hi-res photo everytime you open a new tab
-- See the images from the last 10 tabs you've opened.
-- Download your favourites for personal use
+![demo](https://github.com/Freshman-tech/freshtab/blob/master/demo.png)
 
 ## Setup
 - Clone this repository to your filesystem:

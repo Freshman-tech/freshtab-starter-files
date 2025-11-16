@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Freshtab Options</title>
+        <link rel="stylesheet"
+              href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+        <style>
+          .section {
+            padding: 3rem 1.5rem 1rem;
+          }
+
+          .checkbox input {
+            vertical-align: middle;
+          }
+        </style>
+    </head>
+    <body>
+        <section class="section">
+            <div class="container is-max-widescreen">
+                <h2 class="title is-3">Freshtab Options</h2>
+                <div class="field">
+                    <label class="label" for="unsplashKey">Unsplash Access Key (Required)</label>
+                    <div class="control">
+                        <input class="input"
+                               type="text"
+                               id="unsplashKey"
+                               placeholder="Your Unsplash Access Key"
+                               required>
+                    </div>
+                    <p class="help">
+                        Required to fetch photos. Get your key from the
+                        <a href="https://unsplash.com/developers" target="_blank">Unsplash Developers</a> page.
+                    </p>
+                </div>
+                <div class="field">
+                    <label class="label" for="collections">Custom Collection IDs (Optional)</label>
+                    <div class="control">
+                        <input class="input"
+                               type="text"
+                               id="collections"
+                               placeholder="e.g., 998309, 317099">
+                    </div>
+                    <p class="help">Only show photos from specific collections. Separate multiple IDs with a comma.</p>
+                </div>
+                <div class="field">
+                    <label class="label">AI-powered motivational message</label>
+                    <div class="control">
+                        <label class="checkbox" id="quote-label">
+                            <input type="checkbox" id="showQuote">
+                            Show a motivational quote on the new tab page from
+                            Chrome's built-in AI model (Gemini Nano).
+                        </label>
+                    </div>
+                    <p class="help" id="quote-help">When enabled, a new quote will be fetched for each tab.</p>
+                </div>
+                <progress class="progress is-primary is-small is-hidden"
+                          id="model-progress"
+                          value="0"
+                          max="1"></progress>
+                <div class="field is-grouped">
+                    <div class="control">
+                        <button class="button is-primary" id="save">Save Settings</button>
+                    </div>
+                    <div class="control">
+                        <p class="help is-success" id="status" style="margin-top: 8px;"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script type="module" src="js/options.js"></script>
+    </body>
+</html>

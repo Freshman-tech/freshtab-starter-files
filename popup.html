@@ -1,44 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Settings</title>
-    <style>
-      kbd {
-        font-size: inherit;
-        font-family: inherit;
-      }
-
-      input {
-        margin-top: 10px;
-        margin-bottom: 10px;
-      }
-
-      .success {
-        color: green;
-      }
-
-      .error {
-        color: red;
-      }
-
-      .message {
-        display: block;
-      }
-    </style>
-  </head>
-  <body>
-    <form id="js-form">
-      <label for="collections"
-        >Enter Unsplash collection ID. If multiple, separate with commas. Hit
-        <kbd>Enter</kbd> to save</label
-      >
-      <input type="text" id="js-collections" name="collections" />
-      <span class="message" id="js-message"></span>
-    </form>
-
-    <script src="js/popup.js"></script>
-  </body>
+<html>
+    <head>
+        <title>Freshtab</title>
+        <link rel="stylesheet"
+              href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
+        <style>
+    body {
+      width: 320px;
+      padding: 1.25rem;
+    }
+        </style>
+    </head>
+    <body>
+        <h3 class="title is-5 has-text-centered">Freshtab</h3>
+        <button class="button is-primary is-fullwidth" id="options-btn">Go to Settings</button>
+        <script type="module" src="js/popup.js"></script>
+    </body>
 </html>

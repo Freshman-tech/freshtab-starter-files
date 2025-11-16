@@ -1,0 +1,16 @@
+{
+	"name": "freshtab-starter-files",
+	"version": "1.0.0",
+	"type": "module",
+	"description": "Freshtab displays a beautiful image from Unsplash every time you open a new tab. Tutorial: https://freshman.tech/first-chrome-extension",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Freshman-tech/freshtab-starter-files.git"
+	},
+	"author": "Freshman.tech",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/Freshman-tech/freshtab-starter-files/issues"
+	},
+	"homepage": "https://github.com/Freshman-tech/freshtab-starter-files#readme"
+}

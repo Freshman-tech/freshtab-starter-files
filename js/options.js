@@ -80,7 +80,7 @@ async function createModelSession() {
 					progress.value = e.loaded;
 
 					if (e.loaded === 1) {
-						quoteHelp.textContent = "Download complete, installing model...";
+						quoteHelp.textContent = "Download complete, model installed";
 						progress.removeAttribute("value");
 					}
 				});
